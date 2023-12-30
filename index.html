@@ -1,54 +1,61 @@
-<DOCTYPE html>
-    <html landg="en">
-
+<!DOCTYPE html>
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE = edge">
-        <meta name="viewport" content="wudth=device-width, initial-scale=1.0">
-        <title>Website With Admin Login & Registration  </title>
-        <link rel="stylesheet" href="style1.css">
+        <title> Student result</title> 
+        <link rel="stylesheet" href="style.css">
 
-    </head>
-    <body>
-        <header>
-            <h2 class="logo">Admin portal</h2>
-   
-            </nav>
-        </header>
-        <div class="wrapper">
-            
-            <div class="from-box login">
-                <h2>login</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" required
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="Password" required
-                        <label>password</label>
-                    </div><br>
-                    <div class="rememmber-forgot">
-                        <lable><input type="checkbox">
-                        Remember me</lable>
-                        <a href="#">Forgot password</a>
-                    </div>
-                    <button type="submit" class="btn">login</button>
-                    <div class="Login-register">
-                        <p>Don't have any account? <a
-                         href="#"
-                         class="register-link">Register</a>  
-                        </p>
-                    </div>
-                </form>
+</head>
+<body>
+
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    
+                </div>
             </div>
-        
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
 
-        <script src="script.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
-    </html>
-</DOCTYPE>
+
+
+    </div>
+    <div class="skill-item center-block">
+        <div class="chart-container">
+          <div class="chart" data-percent="result" data-bar- color="#23afe3">
+             <span class="percent" data-after="%">result</span>
+              </div>
+            </div>
+            <br><br><br>
+             <p> A </p>
+       </div>
+
+    <script>
+        let number = document.getElementById("number");
+        let counter =0;
+        setInterval(()=> {
+            if(counter==65){
+                clearInterval();
+            }else{
+                counter += 1;
+            number.innerHTML=counter+"%";
+
+            }
+            
+        },30);
+
+    </script>
+
+</body>
+<footer>
+    <p>Copyright © 2023 Debuggers. All rights reserved.</p>
+ </footer>
+</html>
