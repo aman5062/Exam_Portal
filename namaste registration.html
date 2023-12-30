@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reg form</title>
+    <style>
+        body{
+            background: #f2f2f2;
+        }
+        #frame{
+            margin-top: 4%;
+           
+           
+        }
+        #head{
+            width: 600px;
+            height: 70px;
+            text-align: center;
+            font-family:sans-serif ;
+            font-size:40px;
+            border-bottom: 4px solid;
+            
+        }
+        td{
+            width: 600px;
+            height: 50px;
+            border: 0;
+            padding-left: 2%;
+            font-family:sans-serif ;
+            font-size:20px;
+            box-sizing:;
+        }
+        input{
+            font-size: 20px;
+            border-color:aquamarine;
+            border-radius: 10px;
+            
+        }
+        input:hover{
+            background-color: #f2f2f2;
+        }
+        
+        select{
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        #sub{
+            width:555px;
+            height: 45px;
+            background-color: aqua;
+        }
+    </style>
+    </head>
+    <body>
+        <form>
+        
+        <table id="frame" width="600" height="668" border="5" align="center" bgcolor="white">
+            <tr >
+                <td id="head">Registration Form</td>
+            </tr>
+           
+            <tr>
+                <td>Full Name : <input type="text" name="full name" placeholder="Enter Your Name" required="required"></td>
+            </tr>
+           
+            <tr>
+                <td>Phone Number : <input type="number" name="phone number" placeholder="Enter Your Phone Number" required="required"></td>
+            </tr>
+            <tr>
+                <td>Email Id : <input type="email" name="email" placeholder="Enter Your email" required="required"></td>
+            </tr>
+            <tr>
+                <td>Gender : <input type="radio" name="gender" id="button">Male
+                    <input type="radio" name="gender" >Female
+                    <input type="radio" name="gender" >Other</td>
+            </tr>
+            <tr>
+                <td>Date Of Birth : <input type="date" name="dob"  required="required"></td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Course : <select name="Course" ><option value="B.Tech">B.Tech</option>
+                                                   <option value="BCA">BCA</option>
+                             </select>
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="submit" id="sub"></td>
+            </tr>
+        </table>
+        
+    </form>
+    </body>
+</html>
